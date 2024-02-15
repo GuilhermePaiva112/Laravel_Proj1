@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/jogos/index',['as'=>'jogos.index','uses'=>'Jogo\JogoController@index']);
